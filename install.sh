@@ -1,5 +1,6 @@
 #!/bin/bash
 # ~/.vim/pack/install.sh
+# Make this script executable with `chmod u+x install.sh`
 # Updates and installs vim 8+ packages
 
 source functions.sh
