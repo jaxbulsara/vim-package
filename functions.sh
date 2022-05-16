@@ -78,7 +78,10 @@ function package() {
         cd "$package_name" || exit
 
         echo "Updating $package_name..."
-        result=$(git pull --force)
+        result=$(
+            git pull --force &
+            git submodule update --init --recursive
+        )
         echo "$result"
     else
         # Clone the repo
