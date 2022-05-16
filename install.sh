@@ -13,6 +13,7 @@ source ~/.vim/pack/functions.sh
     group user-interface
     package https://github.com/preservim/nerdtree.git &
     package https://github.com/vim-airline/vim-airline.git &
+    package https://github.com/vim-airline/vim-airline-themes.git &
     wait
 ) &
 
