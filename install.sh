@@ -16,8 +16,6 @@ source ~/.vim/pack/functions.sh
     wait
 ) &
 
-wait
-
 # Linting
 (
     group lint
@@ -25,13 +23,11 @@ wait
     wait
 ) &
 
-wait
-
 # Python
 (
     group python
     package https://github.com/davidhalter/jedi-vim.git &
-    package https://github.com/python-mode/python-mode.git &
+    package https://github.com/jeetsukumaran/vim-pythonsense.git &
     wait
 ) &
 
