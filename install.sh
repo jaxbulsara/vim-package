@@ -31,8 +31,6 @@ wait
 (
     group python
     package https://github.com/davidhalter/jedi-vim.git &
-    package https://github.com/vim-python/python-syntax.git &
-    package https://github.com/vim-python/python-syntax.git &
     package https://github.com/python-mode/python-mode.git &
     wait
 ) &

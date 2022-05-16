@@ -77,16 +77,16 @@ function package() {
         # Update the repo
         cd "$package_name" || exit
 
-        echo "Updating $package_name..."
         result=$(
             git pull --force &
             git submodule update --init --recursive
         )
+        echo "Updating $package_name..."
         echo "$result"
     else
         # Clone the repo
-        echo "Installing $package_name..."
         result=$(git clone --recursive "$git_url")
+        echo "Installing $package_name..."
         echo "$result"
     fi
 }
